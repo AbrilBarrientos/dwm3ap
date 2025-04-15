@@ -1,0 +1,123 @@
+:root {
+    --background: #F3F4F6;
+    --headline: #094067;
+    --title: #374151;
+    --descript: #6B7280;
+    --icon: #374151;
+    --paragraph: #5f6c7b;
+    --button: #3da9fc;
+    --button-text: #fffffe;
+    --borderRadius: 10px;
+    --main: #fffffe;
+    --highlight: #3da9fc;
+    --secondary: #90b4ce;
+    --tertiary: #ef4565;
+    --boxShadow: 0 4px 10px rgba(118, 106, 119, 0.062);
+    --instColor: #4974EC;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'SF Pro Display', sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    display: flex;
+}
+
+.main-content {
+    background-color: var(--background);
+    flex: 1;
+    padding: 20px;
+}
+
+h1{
+    font-size: 0;
+}
+
+/* Sidebar */
+.sidebar {
+    border-radius: 0 10px 10px 0;
+    flex-direction: column;
+    display: flex;
+    max-width: 230px;
+    background-color: var(--main);
+    height: 100vh;
+    position: sticky;
+    top: 0;
+    padding: 20px 30px;
+    box-shadow: var(--boxShadow);
+}
+
+.sidebar ul {
+    margin: auto 0;
+    justify-content: space-between;
+    flex-direction: column;
+    display: flex;
+    height: 80%;
+    list-style: none;
+}
+
+.sidebar li {
+    align-items: center;
+    display: flex;
+    width: 100%;
+}
+
+.sidebar li a {
+    width: 100%;
+    text-align: start;
+    text-decoration: none;
+    color: var(--descript);
+    font-size: 1.1em;
+}
+
+.sidebar li a i{
+    margin-right: 7px;
+}
+
+/* secciones */
+
+section{
+    padding-top: 20px;
+    margin-bottom: 50px;
+}
+
+
+/* section banner */
+.section-banner {
+    border-radius: var(--borderRadius);
+    position: relative;
+    background-color: var(--button);
+    width: 100%;
+    height: 150px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.section-banner::before {
+    border-radius: var(--borderRadius);
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(39, 66, 187, 0.932)); 
+}
+
+.section-banner h2 {
+    z-index: 2;
+    font-size: 2rem; 
+    text-align: center;
+    margin: 0;
+}
