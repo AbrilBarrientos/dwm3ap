@@ -73,6 +73,13 @@ ul{
     padding: 20px 30px;
     box-shadow: var(--boxShadow);
 }
+.sidebar h2{
+    color: var(--highlight);
+    margin: 0;
+    line-height: 20px;
+    font-size: 1em;
+    text-align: center;
+}
 
 .sidebar ul {
     margin: auto 0;
