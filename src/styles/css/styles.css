@@ -14,6 +14,7 @@
     --tertiary: #ef4565;
     --boxShadow: 0 4px 10px rgba(118, 106, 119, 0.062);
     --instColor: #4974EC;
+    --resaltador: #ffe96b;
 }
 
 
@@ -22,6 +23,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'SF Pro Display', sans-serif;
+    line-height: 30px;
 }
 
 html{
@@ -39,7 +41,23 @@ body{
 }
 
 h1{
-    font-size: 0;
+    margin-top: 1em;
+    text-align: center;
+}
+
+h4{
+    margin-top: 15px;
+}
+
+strong{
+    font-weight: 500;
+    padding: 2px;
+    background-color: var(--resaltador);
+}
+
+ul{
+    margin: 0 auto;
+    width: 95%;
 }
 
 /* Sidebar */
@@ -66,6 +84,7 @@ h1{
 }
 
 .sidebar li {
+    
     align-items: center;
     display: flex;
     width: 100%;
@@ -93,27 +112,19 @@ section{
 
 /* section banner */
 .section-banner {
+    margin: 0 auto;
     border-radius: var(--borderRadius);
     position: relative;
     background-color: var(--button);
     width: 100%;
-    height: 150px; 
+    height: 120px; 
     display: flex;
     justify-content: center;
     align-items: center;
     color: white;
 }
 
-.section-banner::before {
-    border-radius: var(--borderRadius);
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(39, 66, 187, 0.932)); 
-}
+
 
 .section-banner h2 {
     z-index: 2;
@@ -121,3 +132,133 @@ section{
     text-align: center;
     margin: 0;
 }
+
+/* CLASE */
+.clase{
+    background-color: var(--main);
+    border-radius: var(--borderRadius);
+    width: 100%;
+    padding: 25px;
+    margin-top: 1em;
+    font-size: 1.1em;
+    box-shadow: 0 10px 25px rgba(214, 215, 216, 0.26);
+}
+
+.clase-header{
+    border-bottom: solid #d1d2d6 2px;
+    
+    
+    width: 100%;
+    height: 35px;
+    align-items: center;
+    display: flex;
+}
+
+.clase-header #fecha{
+    color: var(--tertiary);
+}
+
+.clase-header h3{
+    color: var(--paragraph);
+    margin: 0;
+    margin-right: auto;
+}
+
+h3{
+    margin: 1em 0;
+}
+
+/* Sistemas operativos */
+/* .conceptos{
+    margin: 30px auto;
+    width: 90%;
+} */
+
+.conceptos h4{
+    font-size: 1.2em;
+}
+
+.conceptos ul{
+    display: flex;
+    justify-content: space-between;
+}
+
+.conceptos ul li{
+    margin: 1em;
+}
+
+/* clase 1 */
+.sistema-operativo{
+    align-items: center;
+    justify-content: space-around;
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.sistema-operativo ul{
+    width: 70%;
+}
+
+.sistema-operativo ul li{
+    margin-bottom: 1em;
+}
+
+.sistema-operativo img{
+    width: 300px;
+}
+
+.fa-linux{
+    margin-right: 7px;
+    font-size: 2em;
+}
+
+.his-linux{
+    width: 97%;
+    margin: 0 auto;
+}
+
+.his-linux h4{
+    margin-top: 1em;
+}
+
+.gnu-logo{
+    width: 200px;
+}
+
+.his-linux h5{
+    font-size: 1em;
+}
+
+ul.kernel{
+    margin: 0 auto;
+    width: 95%;
+}
+
+/* clase 2 */
+
+
+
+/* Apliaciones para dispositivos moviles */
+
+/* Aplicaciones web progresivas */
+/* clase 1 */
+.async-ul li,
+.conceptos-clave li,
+.async-js-ul li{
+    margin-bottom: 30px;
+}
+
+img{
+    border-radius: 8px;
+    margin: 15px;
+}
+
+
+
+
+/* Programación II */
+
+/* Emprendimiento de negocios */
+
+/* Programación con entornos de trabajo */
