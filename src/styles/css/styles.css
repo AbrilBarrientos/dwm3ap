@@ -253,6 +253,11 @@ ul.kernel{
 
 /* Apliaciones para dispositivos moviles */
 
+code{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 700;
+}
+
 
 /* Aplicaciones web progresivas */
 /* clase 1 */
@@ -263,7 +268,7 @@ ul.kernel{
 }
 
 img{
-    width: 90%;
+    width: 600px;
     border-radius: 8px;
     margin: 15px;
 }
