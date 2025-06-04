@@ -143,11 +143,186 @@
                     <p id="fecha">26 / 03</p>
                 </div>
 
+                <h3>XAMPP</h3>
+                <ul>
+                    <li><strong>X</strong> = Sistema Operativo</li>
+                    <li><strong>A</strong> = Apache</li>
+                    <li><strong>M</strong> = MariaDB</li>
+                    <li><strong>P</strong> = PHP</li>
+                    <li><strong>P</strong> = Perl</li>
+                </ul>
+
+                <h3>PHP</h3>
+                <p>Lenguaje server-side: el servidor procesa el código y el cliente solo ve el resultado.</p>
+                <p>El código PHP va entre <code> &lt;?php ... ?&gt;</code></p>
+                <p>Solo se ejecuta si el archivo termina en .php y está en un servidor.</p>
+                <p>Se usa para generar HTML dinámico.</p>
+
+                <h3>Imprimir datos con <code>echo</code></h3>
+                <p><code>echo</code> es una construcción del lenguaje en PHP <strong>(no es una función)</strong> que <strong>imprime datos en la pantalla</strong></p>
+                <p>Muestra para el cliente desde el servidor</p>
+                <p id="comentario">
+                    * sintaxis: <code>echo 'Hola mundo';</code>
+                </p>
+                <p><code>echo</code> puede imprimir:</p>
+                <ul>
+                    <li>
+                        Strings
+                        <ul>
+                            <li><code>"texto" 'texto' `texto`</code></li>
+                        </ul>
+                    </li>
+                    <li>
+                        Variables
+                        <ul>
+                            <li><code>$variable</code></li>
+                        </ul>
+                    </li>
+                    <li>
+                        Resultados
+                        <ul>
+                            <li>$numero + 5</li>
+                        </ul>
+                    </li>
+                    <li>
+                        Concatenaciones
+                        <ul>
+                            <li><code>'Bienvendio ' . $nombre</code></li>
+                        </ul>
+                    </li>
+                </ul>
+                <p>Cada línea de <code>echo</code> debe terminar con punto y coma <code>;</code></p>
+                <p>Atajo para <code>echo</code></p>
+                <ul>
+                    <li><code>&lt;?= $variable ?&gt;</code></li>
+                </ul>
+                <img src="./../../src/assets/p2/php1.png" alt="">
+
+                <h3>Variables</h3>
+                <p>Se <strong>declaran</strong> con <code>$</code></p>
+                <img src="./../../src/assets/p2/variable.png" alt="">
+                <p><strong>Tipado dinámico</strong>: PHP <strong>deduce</strong> el tipo de dato.</p>
+                <h4>Tipos de datos comunes</h4>
+                <ul>
+                    <li><code>String</code></li>
+                    <li><code>Integer</code></li>
+                    <li><code>Float</code></li>
+                    <li><code>Boolean</code></li>
+                    <li><code>Array</code></li>
+                    <li><code>Object</code></li>
+                    <li><code>Null</code></li>
+                </ul>
+
+                <h3>Arrays</h3>
+
+                <h4>Indexados</h4>
+                <ul>
+                    <li>índices numéricos (empiezan en 0).</li>
+                    <li>
+                        <img src="../../src/assets/p2/arrayIndexado.png" alt="">
+                    </li>
+                    <li>Listas <strong>simples</strong></li>
+                </ul>
+
+                <h4>Asociativos</h4>
+                <ul>
+                    <li>índices (claves) personalizados.</li>
+                    <li>
+                        <img src="../../src/assets/p2/arrayAsociativo.png" alt="">
+                    </li>
+                    <li>Datos estructurados de tipo <strong>objeto</strong></li>
+                </ul>
+
+                <h4>Multidimensionales</h4>
+                <ul>
+                    <li>Arrays dentro de arrays</li>
+                </ul>
+                <img src="../../src/assets/p2/arrays.png" alt="">
+
+                <h3>Recorrer arrays con <code>foreach</code></h3>
+
+                <h4>Recorrer array indexado</h4>
+                <img src="../../src/assets/p2/recorrerArrayIndexado.png" alt="">
+
+                <h4>Recorrer arrray asociativo</h4>
+                <img src="../../src/assets/p2/recorrerArrayAsociativo.png" alt="">
+
+                <h4>Recorrer array multidimensional</h4>
+                <img src="../../src/assets/p2/recorrerArrayMultidimensional.png" alt="">
+
+                <h4>Recorrer array completo</h4>
+                <img src="../../src/assets/p2/recorrerArrayMultidimensionalCompleto.png" alt="">
+
+                <h3>Imprimir array</h3>
+                <p><strong>NO se usa <code>echo</code></strong></p>
+                <ul>
+                    <li>Se usa <code> print_r($array)</code></li>
+                    <li>Para más detalles se usa <code>var_dump($array)</code>
+                        <ul>
+                            <li>Para mejorar el formato usar etiqueta <code>&lt;pre&gt;</code></li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <h3>Funciones</h3>
+                <img src="../../src/assets/p2/sintaxisFuncion.png" alt="">
+
+                <h4>Parámetros</h4>
+                <p>Valores (pueden ser variables) que las funciones necesitan para funcionar</p>
+
+                <h3>Funciones NATIVAS</h3>
+                <p>PHP posee funciones ya definidas para usar en código</p>
+
+                <h4>Manipulación de strings <em>(texto)</em></h4>
                 
+                <p>Retornar la <strong>longitud de una cadena</strong></p>
+                <ul>
+                    <li><code>echo strlen("texto");</code> <em>// Imprime 5</em></li>
+                </ul>
 
+                <p>Convertir a minúsculas o mayúsculas</p>
+                <ul>
+                    <li><code>echo strtoupper("texto");</code> <em>// TEXTO</em></li>
+                    <li><code>echo strtolower("TEXTO");</code> <em>// texto</em></li>
+                </ul>
+                <p>Extraer una parte de un string</p>
+                <ul>
+                    <li><code>echo substr("Programación", 0, 5);</code> <em>// Progr</em></li>
+                </ul>
 
+                <p>Reemplazar texto en una cadena</p>
+                <ul>
+                    <li><code>echo str_replace("html", "php", "esto es html");</code> <em>// "esto es php"</em></li>
+                </ul>
 
+                <h4>Funciones matemáticas</h4>
+                <p>Redondeos:</p>
+                <ul>
+                    <li><code>round()</code> redondeo normal</li>
+                    <li><code>ceil()</code> redondeo hacia arriba</li>
+                    <li><code>floor()</code> redondeo hacia abajo</li>
+                </ul>
+                <img src="../../src/assets/p2/redondeo.png" alt="">
 
+                <p>Número aleatorio</p>
+                <ul>
+                    <li><code>rand()</code></li>
+                </ul>
+                <img src="../../src/assets/p2/rand.png" alt="">
+
+                <h4>Manejo de Arrays</h4>
+
+                <p>Contar la cantidad de elementos</p>
+                <ul>
+                    <li><code>count()</code></li>
+                </ul>
+                <img src="../../src/assets/p2/count.png" alt="">
+
+                <p>Agregar elementos <strong>al final</strong> del array</p>
+                <ul>
+                    <li><code>array_push()</code></li>
+                </ul>
+                <img src="../../src/assets/p2/push.png" alt="">
             </div>
         </section>
     </main>

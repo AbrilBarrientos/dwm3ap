@@ -255,7 +255,8 @@ ul.kernel{
 
 code{
     font-family: 'Courier New', Courier, monospace;
-    font-weight: 700;
+    font-weight: 800;
+    margin: 0 7px;
 }
 
 
