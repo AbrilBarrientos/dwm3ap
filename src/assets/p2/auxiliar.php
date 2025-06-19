@@ -130,4 +130,75 @@ $colores = ["rojo", "azul","amarillo", "verde"];
 $indice = array_search("azul", $colores);
 echo $indice; // 1
 
+//COMENTARIO EN LINEA
+
+/*
+COMENTARIO 
+DE BLOQUE
+ */
+
+
+if ($edad > 18) {
+    echo "Mayor de edad";
+}
+
+if ($hay_comida) {
+    echo "Servir comida";
+} else {
+    echo "Encargar delivery";
+}
+
+if ($comida == "pizza") {
+    echo "Servir pizza";
+} elseif ($comida == "ensalada") {
+    echo "Servir ensalada";
+} else {
+    echo "No hay comida";
+}
+
+
+echo ($edad >= 18) ? "Mayor" : "Menor";
+
+
+$invitados = $_GET['invitados'] ?? 0;
+
+switch($bebida) {
+    case "agua":
+        echo "Dar agua";
+        break;
+    case "jugo":
+        echo "Dar jugo";
+        break;
+    default:
+        echo "Dar lo que haya";
+}
+
+
+
+$i = 1;
+while ($i <= 5) {
+    echo "Número $i<br>";
+    $i++;
+}
+
+do {
+    echo "Se ejecuta al menos una vez";
+} while (false);
+
+
+
+for ($i = 0; $i < 3; $i++) {
+    echo "Vuelta $i<br>";
+}
+
+$nombres = ["Ana", "Luis"];
+foreach ($nombres as $nombre) {
+    echo "Hola $nombre<br>";
+}
+
+$persona = ["nombre" => "Ana", "edad" => 25];
+foreach ($persona as $clave => $valor){
+    echo ($clave) . ": $valor";
+}
+
 ?>

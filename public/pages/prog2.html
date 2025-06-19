@@ -21,13 +21,22 @@
         <nav class="sidebar">
             <h1>DWM3AP</h1>
             <h2>Programación ll</h2>
+            <a href="./../index.html">Volver</a>
             <ul>
-                <li><a href="aDM.html"><i class="fas fa-mobile-alt"></i> Aplicaciones para dispositivos móviles</a></li>
-                <li><a href="sisOp.html"><i class="fas fa-desktop"></i> Sistemas operativos</a></li>
-                <li><a href="aWP.html"><i class="fas fa-globe"></i> Aplicaciones web progresivas</a></li>
-                <li><a href="prog2.html"><i class="fas fa-code"></i> Programación II</a></li>
-                <li><a href="empNeg.html"><i class="fas fa-lightbulb"></i> Emprendimiento de negocios</a></li>
-                <li><a href="progEnTra.html"><i class="fas fa-laptop-code"></i> Programación con entornos de trabajo</a></li>
+                <li><a href="#clase-1">Clase 1</a></li>
+                <li><a href="#clase-2">Clase 2</a></li>
+                <li><a href="#clase-3">Clase 3</a></li>
+                <li><a href="#clase-4">Clase 4</a></li>
+                <li><a href="#clase-5">Clase 5</a></li>
+                <li><a href="#clase-6">Clase 6</a></li>
+                <li><a href="#clase-7">Clase 7</a></li>
+                <li><a href="#clase-8">Clase 8</a></li>
+                <li><a href="#clase-9">Clase 9</a></li>
+                <li><a href="#clase-19">Clase 10</a></li>
+                <li><a href="#clase-11">Clase 11</a></li>
+                <li><a href="#clase-12">Clase 12</a></li>
+                <li><a href="#clase-13">Clase 13</a></li>
+                <li><a href="#clase-14">Clase 14</a></li>
             </ul>
         </nav>
     </header>
@@ -36,7 +45,7 @@
             <div class="section-banner">
                 <h2>Programación II</h2>
             </div>
-            <div class="clase">
+            <div class="clase" id="clase-1">
                 <div class="clase-header">
                     <h3>Clase 01</h3>
                     <p id="fecha">19 / 03</p>
@@ -137,7 +146,7 @@
                 </ul>
 
             </div>
-            <div class="clase">
+            <div class="clase" id="clase-2">
                 <div class="clase-header">
                     <h3>Clase 02</h3>
                     <p id="fecha">26 / 03</p>
@@ -357,84 +366,222 @@
                 <br>
                 <img src="../../src/assets/p2/manejo-arrays-resumen.PNG" alt="">
             </div>
-            <div class="clase">
+            <div class="clase" id="clase-3">
                 <div class="clase-header">
                     <h3>Clase 03</h3>
                     <p id="fecha">02 / 04</p>
                 </div>
-                <h3></h3>
+                <h3>Comentarios en PHP</h3>
+                <ul>
+                    <li>Comentario de una línea</li>
+                    <li>Comentario en bloque</li>
+                </ul>
+                <img src="../../src/assets/p2/comentariosPHP.png" alt="">
+
+
+
+                <h3>Condicionales en PHP</h3>
+                <p>Decidir si ejecutar algo según si una condición es verdadera o falsa.</p>
+                <ul>
+                    <li><code>if</code></li>
+                </ul>
+                <img src="../../src/assets/p2/if.png" alt="">
+
+                <ul>
+                    <li><code>if else</code></li>
+                </ul>
+                <img src="../../src/assets/p2/if_else.png" alt="">
+                
+
+                <ul>
+                    <li><code>else if</code></li>
+                </ul>
+                <img src="../../src/assets/p2/elseif.png" alt="">
+                
+
+                <ul>
+                    <li><code>switch</code></li>
+                    <ul>
+                        <li>Comparar un mismo valor contra muchos posibles:</li>
+                    </ul>
+                </ul>
+                <img src="../../src/assets/p2/switch.png" alt="">
+                
+
+                <ul>
+                    <li>Operador ternario<code> <strong>?</strong></code></li>
+                    <ul>
+                        <li>Más corto que un if</li>
+                    </ul>
+                </ul>
+                <img src="../../src/assets/p2/ternario.png" alt="">
+                
+
+                <ul>
+                    <li>Null Coalesce<code><strong>??</strong></code></li>
+                    <ul>
+                        <li>Devuelve un valor <strong>si existe</strong>, si no, otro por defecto:</li>
+                    </ul>
+                </ul>
+                <img src="../../src/assets/p2/coalesce.png" alt="">
+
+                <h4>Operadores comunes</h4>
+
+                <p>Igual en valor</p>
+                <ul>
+                    <li><code>==</code></li>
+                </ul>
+                <p>Igual en vlaor y tipo</p>
+                <ul>
+                    <li><code>===</code></li>
+                </ul>
+
+                <p>Distinto en valor</p>
+                <ul>
+                    <li><code>!=</code></li>
+                </ul>
+
+                <p>Distinto en valor o tipo</p>
+                <ul>
+                    <li><code>!==</code></li>
+                </ul>
+
+                <p>Mayor</p>
+                <ul>
+                    <li><code>></code></li>
+                </ul>
+
+                <p>Menor</p>
+                <ul>
+                    <li><code><</code></li>
+                </ul>
+
+                <p>Mayor o igual</p>
+                <ul>
+                    <li><code>>=</code></li>
+                </ul>
+
+                <p>Menor o igual</p>
+                <ul>
+                    <li><code><=</code></li>
+                </ul>
+
+                <p>Ambos verdaderos</p>
+                <ul>
+                    <li><code>&&</code></li>
+                </ul>
+                
+                <p>Invierte el valor (negación)</p>
+                <ul>
+                    <li><code>!</code></li>
+                </ul>
+
+                <h3>Loops (Bucles) | While, Do While, For, Foreach</h3>
+                <p><strong>Repetir código</strong> mientras se <strong>cumpla una condición.</strong></p>
+                <!-- ------ -->
+
+                <h4>While <em>(mientras)</em></h4>
+                <ul>
+                    <li>Evalúa primero la condición</li>
+                </ul>
+                <img src="../../src/assets/p2/while.png" alt="">
+                
+                <h4>Do while <em>(HACER mientras)</em></h4>
+                <ul>
+                    <li>Se ejecuta al menos una vez</li>
+                </ul>
+                <img src="../../src/assets/p2/DOwHILE.png" alt="">
+
+                <h4>For <em>(para...)</em></h4>
+                <ul>
+                    <li>Control total sobre inicio, condición y paso</li>
+                </ul>
+                <img src="../../src/assets/p2/for.png" alt="">
+
+                <h4>For each <em>(para cada...)</em></h4>
+                <ul>
+                    <li>Recorrer arrays</li>
+                </ul>
+                <h5>Array simple</h5>
+                <img src="../../src/assets/p2/foreach-simple.png" alt="">
+
+                <h5>Array asociativo</h5>
+                <img src="../../src/assets/p2/foreach-asoc.png" alt="">
+
+                <h3>Formularios y envio de datos <strong>POST</strong> | <strong>GET</strong></h3>
+                <h3>Versiones de PHP</h3>
             </div>
-                        <div class="clase">
+            <div class="clase" id="clase-4">
                 <div class="clase-header">
                     <h3>Clase 04</h3>
                     <p id="fecha">04 / 04</p>
                 </div>
                 <h3></h3>
             </div>
-                        <div class="clase">
+            <div class="clase" id="clase-5">
                 <div class="clase-header">
                     <h3>Clase 05</h3>
                     <p id="fecha">09 / 04</p>
                 </div>
                 <h3></h3>
             </div>
-                        <div class="clase">
+            <div class="clase" id="clase-6">
                 <div class="clase-header">
                     <h3>Clase 06</h3>
                     <p id="fecha">11 / 04</p>
                 </div>
                 <h3></h3>
             </div>
-                        <div class="clase">
+            <div class="clase" id="clase-7">
                 <div class="clase-header">
                     <h3>Clase 07</h3>
                     <p id="fecha">16 / 04</p>
                 </div>
                 <h3></h3>
             </div>
-                        <div class="clase">
+            <div class="clase" id="clase-8">
                 <div class="clase-header">
                     <h3>Clase 08</h3>
                     <p id="fecha">23 / 04</p>
                 </div>
                 <h3></h3>
             </div>
-                        <div class="clase">
+            <div class="clase" id="clase-9">
                 <div class="clase-header">
                     <h3>Clase 09</h3>
                     <p id="fecha">28 / 03</p>
                 </div>
                 <h3></h3>
             </div>
-                        <div class="clase">
+            <div class="clase" id="clase-10">
                 <div class="clase-header">
                     <h3>Clase 10</h3>
                     <p id="fecha">28 / 03</p>
                 </div>
                 <h3></h3>
             </div>
-                        <div class="clase">
+            <div class="clase" id="clase-11">
                 <div class="clase-header">
                     <h3>Clase 11</h3>
                     <p id="fecha">28 / 03</p>
                 </div>
                 <h3></h3>
             </div>
-                        <div class="clase">
+            <div class="clase" id="clase-12">
                 <div class="clase-header">
                     <h3>Clase 12</h3>
                     <p id="fecha">28 / 03</p>
                 </div>
                 <h3></h3>
             </div>
-                        <div class="clase">
+            <div class="clase" id="clase-13">
                 <div class="clase-header">
                     <h3>Clase 13</h3>
                     <p id="fecha">28 / 03</p>
                 </div>
                 <h3></h3>
             </div>
-                        <div class="clase">
+            <div class="clase" id="clase-14">
                 <div class="clase-header">
                     <h3>Clase 14</h3>
                     <p id="fecha">28 / 03</p>
