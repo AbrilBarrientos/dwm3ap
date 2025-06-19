@@ -6,13 +6,13 @@ const persona = {
     nombre: 'Carlos',
     edad: 20,
     email: 'carlos@mail.com',
-    saludar: function(){
-        alert('Hola!');
-    }
+    // saludar: function(){
+    //     alert('Hola!');
+    // }
 }
 
 //Ejecutar metodo
-persona.saludar();
+// persona.saludar();
 
 
 

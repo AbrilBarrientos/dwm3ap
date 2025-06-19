@@ -105,7 +105,29 @@ array_push($frutas, "banana");
 // $frutas = ["manzana", "pera", "banana"];
 
 
+$colores = ["rojo", "azul","amarillo", "verde"];
+
+$ultimo = array_pop($colores); //eliminar "amarillo"
+
+//El array $colores queda así: $colores = ["rojo", "azul"];
 
 
+
+array_unshift($colores, "negro");
+print_r($colores);
+//El array $colores queda así: $colores = ["negro","rojo", "azul"];
+
+$colores = ["rojo", "azul","amarillo", "verde"];
+if (in_array("verde", $colores)) {
+    echo "¡Está verde!";
+} //"¡Está verde!"
+
+$persona = ["nombre" => "Ana", "edad" => 30];
+$claves = array_keys($persona);
+print_r($claves); // ["nombre", "edad"]
+
+$colores = ["rojo", "azul","amarillo", "verde"];
+$indice = array_search("azul", $colores);
+echo $indice; // 1
 
 ?>
