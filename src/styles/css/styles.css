@@ -75,7 +75,7 @@ p#comentario{
     height: 100vh;
     position: sticky;
     top: 0;
-    padding: 20px 30px;
+    padding: 5px 30px;
     box-shadow: var(--boxShadow);
 }
 .sidebar h2{
@@ -87,6 +87,8 @@ p#comentario{
 }
 
 .sidebar ul {
+    overflow: auto;
+    gap: 1em;
     margin: auto 0;
     justify-content: space-between;
     flex-direction: column;

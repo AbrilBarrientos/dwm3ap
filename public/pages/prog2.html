@@ -12,7 +12,7 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simple-icons-font@v7/font/simple-icons.min.css">
         <!-- Font-family -->
         <link href="https://fonts.cdnfonts.com/css/sf-pro-display" rel="stylesheet">
-    <title>DWM3AP - DV Apuntes</title>
+    <title>DWM3AP - P2 Apuntes</title>
 </head>
 <body>
     
@@ -637,7 +637,104 @@
                     <h3>Clase 14</h3>
                     <p id="fecha">14 / 05</p>
                 </div>
-                <h3></h3>
+                <h3>Bases de Datos</h3>
+                <p id="comentario">* Vincular datos y automatizar tareas en cualquier aplicación web.</p>
+                <p>Sistema que permite:</p>
+                <ul>
+                    <li><strong>Guardar</strong> datos de forma ordenada</li>
+                    <li><strong>Acceder</strong> a esos datos cuando se necesita</li>
+                    <li><strong>Relacionar</strong> datos entre si para obtener informacion compleja</li>
+                </ul>
+
+                <h4>Tipos de BBDD</h4>
+
+                <table class="tabla-metodos">
+                    <thead>
+                        <tr>
+                            <th>Tipo</th>
+                            <th>Cómo organizan los datos</th>
+                            <th>Para qué se usan</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>RELACIONALES</strong> <em>EXCEL, </em> MySQL, MariaDB</td>
+                            <td>En tablas con filas y columnas conectadas entre sí</td>
+                            <td>Sitios web, apps, sistemas contables</td>
+                        </tr>
+                        <tr>
+                            <td><strong>NO relacionales</strong> <em>JSON, </em> 	MongoDB</td>
+                            <td>NO utilizan SQL para sus consultas y almacenan sus datos en documentos en vez de tablas.</td>
+                            <td>Redes sociales, apps en tiempo real</td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <p id="comentario">* Las BBDD relacionales se conocen como BBDD SQL.</p>
+                <p id="comentario">* Las BBDD no relacionales se conocen como NoSQL.</p>
+
+                <h3>SQL</h3>
+                <p>SQL = <em><strong>Structured Query Language</strong></em></p>
+                <p id="comentario">* query = peticion / consulta</p>
+                <p>Lenguaje que se usa para comunicarse con las bases de datos.</p>
+                <p>Hacer <strong>CONSULTAS</strong></p>
+                
+                <h4>Ejemplo de consulta SQL</h4>
+                <ul>
+                    <li>🗨️ <em>"Traer todos los usuarios con más de 100 puntos"</em> .</li>
+                </ul>
+                <br>
+                <code>SELECT nombre, email FROM usuarios WHERE puntos > 100;</code>
+                <p id="comentario">* “Traer los campos nombre y email de la tabla usuarios, pero solamente de aquellos registros donde el campo puntos sea mayor a 100.”</p>
+
+                <h3>MYSQL (O MariaDB)</h3>
+                <p>Programa que ejecuta consultas SQL. Para usarlo localmente, instalar XAMPP</p>
+                <ul>
+                    <li>Base de datos = <strong>Schema</strong></li>
+                    <li>Tablas = <strong>Entidades</strong></li>
+                    <li>Columnas = <strong>Campos</strong></li>
+                    <li>Filas = <strong>Registros</strong></li>
+                </ul>
+
+                <h3>Tipos de datos en MySQL</h3>
+
+                <h4>Numéricos</h4>
+                <ul>
+                    <li>Tipo <strong><code>INT</code></strong></li>
+                    <ul>
+                        <li>Números enteros</li>
+                        <li><em>1, 25, -8</em></li>
+                    </ul>
+                </ul>
+
+                <ul>
+                    <li>Tipo <strong><code>DECIMAL(0,0)</code></strong></li>
+                    <ul>
+                        <li>Números decimales con precisión</li>
+                        <li><em>123.45</em></li>
+                    </ul>
+                </ul>
+                <ul>
+                    <li>Tipo <strong><code>FLOAT / DOUBLE</code></strong></li>
+                    <ul>
+                        <li>Decimales menos precisos pero más rápidos</li>
+                        <li><em>3.1415</em></li>
+                    </ul>
+                </ul>
+
+                <p id="comentario">* UNSIGNED = sólo positivos</p>
+                <p id="comentario">* SIGNED = por defecto, acepta negativos</p>
+
+                <h4>Texto</h4>
+
+
+                <h4>Temporales</h4>
+
+
+
+
+
+
             </div>
             <div class="clase" id="clase-15">
                 <div class="clase-header">
@@ -679,7 +776,7 @@
                     <h3>Clase 20</h3>
                     <p id="fecha">04 / 06</p>
                 </div>
-                <h3>ACAAA</h3>
+                <h3></h3>
             </div>
             <div class="clase" id="clase-21">
                 <div class="clase-header">
