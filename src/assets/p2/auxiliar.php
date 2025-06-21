@@ -198,7 +198,8 @@ foreach ($nombres as $nombre) {
 
 $persona = ["nombre" => "Ana", "edad" => 25];
 foreach ($persona as $clave => $valor){
-    echo ($clave) . ": $valor";
+    echo ucfirst($clave) . ": $valor";
+    //ucfirst = "Upper Case First" → Primera letra en mayúscula.
 }
 
 ?>
